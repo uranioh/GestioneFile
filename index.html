@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="POST" action="script.php">
+    <h1>Registrati</h1>
+    <input type="hidden" name="action" value="sign-up">
+    <div>
+        <label for="fname">Nome</label>
+        <input type="text" name="fname" id="fname" required>
+    </div>
+
+    <div>
+        <label for="lname">Cognome</label>
+        <input type="text" name="lname" id="lname" required>
+    </div>
+
+    <div>
+        <label for="bdate">Data di nascita</label>
+        <input type="date" name="bdate" id="bdate" required>
+    </div>
+
+    <div id="gender">
+        <div>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Maschio</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="male">
+            <label for="female">Femmina</label>
+        </div>
+    </div>
+
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+
+    <div>
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" id="pwd" required>
+    </div>
+
+    <button type="submit">Registrati</button>
+</form>
+
+
+<form method="POST" action="script.php">
+    <h1>Accedi</h1>
+    <input type="hidden" name="action" value="login">
+    <div>
+        <label for="l_email">Email</label>
+        <input type="email" name="l_email" id="l_email" required>
+    </div>
+
+    <div>
+        <label for="l_pwd">Password</label>
+        <input type="password" name="l_pwd" id="l_pwd" required>
+    </div>
+
+    <button type="submit">Accedi</button>
+</form>
+
+</body>
+</html>
